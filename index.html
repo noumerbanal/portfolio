@@ -19,6 +19,7 @@
 	<!-- Fonts -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
 </head>
 <body>
 
@@ -38,7 +39,7 @@
 
 			<!-- Navigation Link -->
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
+				<ul class="navbar-nav ml-auto text-center">
 					<li class="nav-item active">
 						<a class="nav-link" href="#about"><h3>about</h3></a>
 					</li>
@@ -51,7 +52,6 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#"><h3>work</h3></a>
 					</li>
-					<!-- <span class="sr-only">(current)</span> -->
 				</ul>
 			</div>
 		</nav>
@@ -59,15 +59,20 @@
 
 		<!-- Introduction -->
 		<blockquote>
-			<em>
-				<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
-			</em>
+				<h3>I'm Noumer. I am a freelance designer and developer.
+				</h3>
+				<h3>
+					As a designer, my primary goal is to create products and services that will be easy for everyone.
+				</h3>
+				<h3>
+					As a developer, my primary goal is to build products and services that will functional for everyone.
+				</h3>
 		</blockquote>
 
 		<!-- Work-->
 		<div class="container content">
 			<section id="work">
-				<h2>Work</h2>
+				<h2 class="goldenrod">Work</h2>
 
 				<div class="row">
 					<!-- Capstone 1 -->
@@ -114,12 +119,10 @@
 					</div> -->
 				</div>
 			</section>
-		</div>
 
 		<!-- Skills-->
-		<div class="container content">
 			<section id="skills">
-				<h2>Skills</h2>
+				<h2 class="bronze">Skills</h2>
 				<h3>front-end</h3>
 				<div class="row">
 					<div class="col-sm-4 col-lg-4">
@@ -169,12 +172,10 @@
 					</div>
 				</div>
  -->			</section>
-		</div>
 
 		<!-- Social-->
-		<div class="container content">
 			<section id="social">
-				<h2>Social</h2>
+				<h2 class="seaweed">Social</h2>
 				<div class="row">
 					<div class="col-sm-4 col-lg-4">
 						<!-- <img src="#" class="social-image"> -->
@@ -223,4 +224,25 @@
 		</footer>
 
 </body>
+
+<script>
+// Show & hide business card
+$(window).scroll(function() {
+    if ($(this).scrollTop() + $(window).height() > $('#skills').offset().top) {
+        $('#card .business-card').css({
+			'visibility':'visible'
+        });
+    } else {
+		$('#card .business-card').css({
+			'visibility':'hidden'
+        });
+	}
+});
+// Prevent from orphaned & widowed paraghraph
+$('h3').each(function(){
+    var string = $(this).html();
+    string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
+    $(this).html(string);
+});
+</script>
 </html>
