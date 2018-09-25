@@ -47,7 +47,7 @@ nav{
 }
 
 .intro {
-	margin: 0px auto 80px;
+	margin: 90px auto 200px;
 	max-width: 600px;
 	font-family: monospace;
 }
@@ -58,10 +58,6 @@ nav{
 
 section {
 	position: relative;
-}
-
-.fab, .fas, .far {
-	font-size: 40px;
 }
 
 .navbar-toggler {
@@ -93,14 +89,19 @@ section {
 }
 
 #skills, #social {
-	margin: 400px 0 100px;
+	margin: 350px 0 100px;
 }
 
 #social > div > div,#skills > div > div {
 	text-align: center;
-	font-size: 4em;
-
+	margin: 20px 0px;
 }
+
+#social > div > div > a > i,#skills > div > div > i{
+	font-size: 3rem;
+	padding: 10px;
+}
+
 #social > div > div > p, #skills > div > div > p {
 	font-size: initial;
 	font-weight: bold;
@@ -108,8 +109,54 @@ section {
 	color: #5f4505;
 }
 
+
+/* Skills Icons Colors */
+/* #skills > div > div:first-child {
+	color: #E44D26;
+}
+#skills > div > div:nth-child(2) {
+	color: #0277BD;
+}
+#skills > div > div:nth-child(3) {
+	color: #F0DB4F;
+}
+#skills > div > div:nth-child(4) {
+	color: #FFBB00;
+}
+#skills > div > div:nth-child(5) {
+	color: #F69640;
+}
+#skills > div > div:nth-child(6) {
+	color: #2996FB;
+}
+
+#social > div > div:first-child > a {
+	color: #424242;
+}
+#social > div > div:nth-child(2) > a{
+	color: #1769ff;
+}
+#social > div > div:nth-child(3) > a{
+	color:  #c13584;
+} */
+
+#social > div > div:first-child > a {
+	color: #424242;
+}
+#social > div > div:nth-child(2) > a{
+	color: #424242;
+}
+#social > div > div:nth-child(3) > a{
+	color: #424242;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
 .content h2{
-	font-size: 8rem;
+	font-size: 10rem;
     display: inline;
     position: absolute;
     font-weight: bold;
@@ -133,6 +180,9 @@ section {
 	width: 100%;
 	height: 280px;
 	margin: 20px 0px;
+	background-image: url(../img/islapilipinas.png);
+	background-size: cover;
+	background-position: center center;
 }
 
 .skills-image{
@@ -169,15 +219,14 @@ section {
 }
 
 .business-card img {
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: 100%;
     display: block;
-    margin: 20px auto 10px;
-    /*border-radius: 50%;*/
+    padding: 20px;
 }
 
 .business-card h3 {
-    margin: 0;
+    /* margin: 0;
     position: absolute;
     left: -4px;
     right: 0;
@@ -185,8 +234,37 @@ section {
     font-size: 70px;
     font-weight: bold;
     white-space: nowrap;
-    color: white;
+	color: white;
+	letter-spacing: -1px; */
+
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	font-size: 35px;
 }
+
+.business-card a:nth-child(2) {
+	position: absolute;
+	top: 80px;
+	right: 190px;
+	color: #0a0a0a;
+}
+
+.business-card a:nth-child(3) {
+	position: absolute;
+	top: 120px;
+	right: 195px;
+	color: #0a0a0a;
+}
+
+.business-card a:nth-child(4) {
+	position: absolute;
+	top: 160px;
+	right: 185px;
+	color: #0a0a0a;
+}
+
+
 
 footer {
   text-align: center;
@@ -194,8 +272,12 @@ footer {
 
 @media (max-width: 650px) {
 
-	.business-card h3 {
+	/* .business-card h3 {
 		top: -11vw;
 	    font-size: 11vw;
+	} */
+
+	.content h2 {
+		font-size: 8rem;
 	}
 }

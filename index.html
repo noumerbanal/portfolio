@@ -16,6 +16,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<!-- Bootstrap JS -->
 	<script type="text/javascript" src="./assets/js/bootstrap.js"></script>
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico">
 	<!-- Fonts -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
@@ -40,18 +42,19 @@
 			<!-- Navigation Link -->
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ml-auto text-center">
-					<li class="nav-item active">
-						<a class="nav-link" href="#about"><h3>about</h3></a>
+					<li class="nav-item">
+						<a class="nav-link" href="#work"><h3>work</h3></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#skills"><h3>skills</h3></a>
+						<a class="nav-link" href="#skills" id="skillsBtn"><h3>skills</h3></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#social"><h3>social</h3></a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#"><h3>work</h3></a>
+					<li class="nav-item active">
+						<a class="nav-link" href="#about"><h3>about</h3></a>
 					</li>
+					
 				</ul>
 			</div>
 		</nav>
@@ -65,7 +68,7 @@
 					As a designer, my primary goal is to create products and services that will be easy for everyone.
 				</h4>
 				<h4>
-					As a developer, my primary goal is to build products and services that will functional for everyone.
+					As a developer, my primary goal is to build products and services that will be functional for everyone.
 				</h4>
 		</div>
 
@@ -83,7 +86,7 @@
 						</p>
 					</div>
 					<div class="col-md-6 order-md-2">
-						<img src="#" class="work-image">
+						<a href="https://noumerbanal.github.io/islapilipinas/" target="_blank"><div class="work-image"></div></a> 
 					</div>
 
 					<!-- Capstone 2 -->
@@ -175,39 +178,38 @@
 				<h2 class="coral">Social</h2>
 				<div class="row">
 					<div class="col-4">
-						<!-- <img src="#" class="social-image"> -->
-						<i class="fab fa-github-square"></i>
-						<p>github</p>
+						<a href="https://github.com/noumerbanal" target="_blank">
+							<i class="fab fa-github-square"></i>
+							<p>github</p>
+						</a>
 					</div>
 					<div class="col-4">
 						<!-- <img src="#" class="social-image"> -->
-						<i class="fab fa-behance-square"></i>
-						<p>behance</p>
+						<a href="https://www.behance.net/noumer" target="_blank">
+							<i class="fab fa-behance-square"></i>
+							<p>behance</p>
+						</a>
 					</div>
 					<div class="col-4">
 						<!-- <img src="#" class="social-image"> -->
-						<i class="fab fa-instagram"></i>
-						<p>instagram</p>
+						<a href="https://www.instagram.com/ianbanal" target="_blank">
+							<i class="fab fa-instagram"></i>
+							<p>instagram</p>
+						</a>
 					</div>
 			</section>
 		</div>
 
 
 		<!-- Business Card-->
-		<div class="container">
+		<div class="container" id="about">
 			<section id="card">
 				<div class="business-card">
 					<img src="./assets/img/profile.jpeg">
-					<div class="row">
-						<div class="col-6">
-							<small>phone</small>
-						</div>
-						<div class="col-6">
-							<small>email</small>
-						</div>
-					</div>
+					<a href="tel:639189468490"><h5 class="goldenrod"><i class="fas fa-chevron-right"></i> phone</h5></a>
+					<a href="mailto:noumer.banal@gmail.com"><h5 class="bronze"><i class="fas fa-chevron-right"></i> email</h5></a>
+					<a href="https://twitter.com/ianbanal" target="_blank"><h5 class="coral"><i class="fas fa-chevron-right"></i> twitter</h5></a>
 					<h3>Noumer Ian Banal</h3>
-					<small class="text-muted">Front-End Developer</small>
 				</div>
 			</section>
 		</div>
