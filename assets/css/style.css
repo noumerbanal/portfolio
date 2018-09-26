@@ -281,3 +281,29 @@ footer {
 		font-size: 8rem;
 	}
 }
+
+
+@media (max-width: 639px) {
+
+	.business-card img {
+		margin: auto;
+	}
+
+	.business-card h3 {
+		color: white;
+	    right: 36px;
+	    font-size: 34px;
+	}
+
+	.business-card a:nth-child(2) {
+	    right: 175px;
+	}
+
+	.business-card a:nth-child(3) {
+	    right: 180px;
+	}
+
+	.business-card a:nth-child(4) {
+	    right: 170px;
+	}
+}
